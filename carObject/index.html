@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>carDatas</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="container">
+  <form class="car">
+    <label for="licenceNumber">Licence Number</label>
+    <input type="text" name="licenceNumber">
+    <label for="maker">Car Maker</label>
+    <input type="text" name="maker"><br>
+    <label for="model">Model</label>
+    <input type="number" name="model"><br>
+    <label for="price">Price</label>
+    <input type="number" name="price"><br>
+    <label for="color">Color</label>
+    <input type="text" name="color">
+    <button type="button" name="button" onclick="addNewcar()">Submit</button>
+    <button type="button" name="button" onclick="cycleTest()">Cycle</button>
+  </form>
+
+  <form class="search">
+    <input type="text" name="search">
+    <button type="button" name="btnSearch" onclick="searchLicencePlate()">Search</button>
+    <p id="makerResult">
+    </p>
+    <p id="modelResult">
+
+    </p>
+  </form>
+
+
+</body>
+<script src="car.js">
+
+</script>
+
+</html>
